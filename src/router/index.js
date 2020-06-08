@@ -3,12 +3,16 @@ import Router from 'vue-router'
 import Login from '@/components/Login'
 import Main from '@/components/Main'
 import Customer from '@/components/customer/Customer'
-import AddCustomer from '@/components/customer/AddCustomer'
-import EditCustomer from '@/components/customer/EditCustomer'
 import Linkman from '@/components/linkman/Linkman'
 import UpdatePwd from '@/components/UpdatePwd'
 import DetailsCustomer from '@/components/customer/DetailsCustomer'
+import AddLinkman from '@/components/linkman/AddLinkman'
 import Users from '@/components/user/Users'
+
+import AddCustomer from '@/components/customer/AddCustomer'
+import EditCustomer from '@/components/customer/EditCustomer'
+
+
 
 Vue.use(Router)
 
@@ -59,6 +63,11 @@ export default new Router({
           name: 'Users',
           component: Users
         },
+        {
+                  path: 'addLinkman',
+                  name: 'AddLinkman',
+                  component: AddLinkman
+                },
       ]
     }
   ]
