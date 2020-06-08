@@ -1,7 +1,7 @@
 <template>
   <div>
    <div>
-    <button class="btn btn-default" ><i class="glyphicon glyphicon-plus"></i>&nbsp;添加客户</button>
+    <button class="btn btn-default" @click="toAadd()"><i class="glyphicon glyphicon-plus"></i>&nbsp;添加客户</button>
 
 
    <input type="text" placeholder="请输入查询客户的名字" style="border: 1px gray solid; width: 200px; height: 30px; margin-left: 450px;" v-model="searchName">
@@ -92,7 +92,9 @@
       toEdit:function(id){
         this.$router.push({name:"EditCustomer",query:{'id':id}})
       },
-
+      toAadd:function(){
+        this.$router.push("/addCustomer")
+      },
       del:function(id,name){
         var obj = this;
         if(confirm("你确定要删除"+name+"吗？")){

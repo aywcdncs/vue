@@ -10,12 +10,18 @@
           </div>
         </div>
         <div class="form-group">
-          <label  class="col-sm-2 control-label">客户性别</label>
+          <label  class="col-sm-2 control-label">客户年龄</label>
           <div class="col-sm-10">
-             <input type="radio"  name="sex" value="0" v-model="customer.sex">男
-             <input type="radio"  name="sex" value="1" v-model="customer.sex">女
+             <input type="text" class="form-control"  placeholder="请输入客户年龄" v-model="customer.age">
+             
           </div>
 
+        </div>
+        <div class="form-group">
+          <label  class="col-sm-2 control-label">客户邮箱</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control"  placeholder="请输入客户邮箱" v-model="customer.email">
+          </div>
         </div>
         <div class="form-group">
           <label  class="col-sm-2 control-label">客户电话</label>
@@ -23,12 +29,7 @@
             <input type="text" class="form-control"  placeholder="请输入客户电话" v-model="customer.phone">
           </div>
         </div>
-        <div class="form-group">
-          <label  class="col-sm-2 control-label">客户生日</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control"  placeholder="请输入客户生日" v-model="customer.birth">
-          </div>
-        </div>
+        
         <button class="btn btn-success" @click="add" style="margin-left: 200px;">添加</button>
 
       </div>
@@ -43,7 +44,7 @@ export default{
     data:function(){
       return {
         //表单输入的绑定
-        customer:{name:"",sex:1,phone:"",birth:''}
+        customer:{name:"",age:"",email:"",phone:""}
       }
     },
     methods:{
@@ -54,7 +55,7 @@ export default{
         $.ajax({
           type:"post",
           url:"http://localhost:8082/crm/customerController/add",
-          data:{time:new Date().getTime(),name:obj.customer.name,sex:obj.customer.sex,phone:obj.customer.phone,birth:obj.customer.birth},
+          data:{time:new Date().getTime(),name:obj.customer.name,age:obj.customer.age,email:obj.customer.email,phone:obj.customer.phone},
           success:function(result){
              alert(result);
              //通过在JS代码进行页面跳转
