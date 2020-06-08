@@ -13,7 +13,6 @@
           <label  class="col-sm-2 control-label">客户年龄</label>
           <div class="col-sm-10">
              <input type="text" class="form-control"  placeholder="请输入客户年龄" v-model="customer.age">
-             
           </div>
 
         </div>
@@ -29,7 +28,7 @@
             <input type="text" class="form-control"  placeholder="请输入客户电话" v-model="customer.phone">
           </div>
         </div>
-        
+
         <button class="btn btn-success" @click="add" style="margin-left: 200px;">添加</button>
 
       </div>
