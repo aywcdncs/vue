@@ -80,7 +80,7 @@
           </div>
           <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body" style="padding: 0;">
-              <button class="btn btn-default" style="width: 100%;">商品信息</button>
+              <button class="btn btn-default" style="width: 100%;" @click="toGoods()">商品信息</button>
               <button class="btn btn-default" style="width: 100%;">采购管理</button>
               <button class="btn btn-default" style="width: 100%;">采购退货</button>
             </div>
@@ -197,8 +197,13 @@
       toUpdatePwd:function(){
          this.$router.push("/main/updatePwd")
       },
+<<<<<<< HEAD
       toSupp:function(){
          this.$router.push("/main/supplierinfo")
+=======
+      toGoods:function(){
+        this.$router.push("/main/goods")
+>>>>>>> f181dd8b4d20dd77985641c857db43824febe268
       }
     }
   }

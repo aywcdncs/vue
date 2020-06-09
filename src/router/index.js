@@ -8,7 +8,8 @@ import UpdatePwd from '@/components/UpdatePwd'
 import DetailsCustomer from '@/components/customer/DetailsCustomer'
 import AddLinkman from '@/components/linkman/AddLinkman'
 import Users from '@/components/user/Users'
-
+import Goods from '@/components/goods/Goods'
+import AddGoods from '@/components/goods/AddGoods'
 import AddCustomer from '@/components/customer/AddCustomer'
 import EditCustomer from '@/components/customer/EditCustomer'
 
@@ -64,11 +65,7 @@ export default new Router({
           name: 'Users',
           component: Users
         },
-        {
-        path: 'addLinkman',
-        name: 'AddLinkman',
-        component: AddLinkman
-        },
+
         {
           path: 'supplierinfo',
           name: 'Supplierinfo',
@@ -79,6 +76,21 @@ export default new Router({
           name: 'AddSupp',
           component: AddSupp
         },
+        {
+          path: 'addLinkman',
+          name: 'AddLinkman',
+          component: AddLinkman
+        },
+        {
+          path: 'goods',
+          name: 'Goods',
+          component: Goods
+        },
+        {
+          path: 'addGoods',
+          name: 'AddGoods',
+          component: AddGoods
+        }
       ]
     }
   ]
