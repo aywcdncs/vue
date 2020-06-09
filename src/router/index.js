@@ -12,7 +12,8 @@ import Users from '@/components/user/Users'
 import AddCustomer from '@/components/customer/AddCustomer'
 import EditCustomer from '@/components/customer/EditCustomer'
 
-
+import Supplierinfo from '@/components/supplier/Supplierinfo'
+import AddSupp from '@/components/supplier/AddSupp'
 
 Vue.use(Router)
 
@@ -64,10 +65,20 @@ export default new Router({
           component: Users
         },
         {
-                  path: 'addLinkman',
-                  name: 'AddLinkman',
-                  component: AddLinkman
-                },
+        path: 'addLinkman',
+        name: 'AddLinkman',
+        component: AddLinkman
+        },
+        {
+          path: 'supplierinfo',
+          name: 'Supplierinfo',
+          component: Supplierinfo
+        },
+        {
+          path: 'addsupp',
+          name: 'AddSupp',
+          component: AddSupp
+        },
       ]
     }
   ]

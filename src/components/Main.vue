@@ -62,7 +62,7 @@
           </div>
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body" style="padding: 0;">
-              <button class="btn btn-default" style="width: 100%;">供应商信息</button>
+              <button class="btn btn-default" style="width: 100%;" @click="toSupp">供应商信息</button>
               <button class="btn btn-default" style="width: 100%;">检索中心</button>
               <button class="btn btn-default" style="width: 100%;">渠道管理</button>
               <button class="btn btn-default" style="width: 100%;">来电管理</button>
@@ -196,6 +196,9 @@
       },
       toUpdatePwd:function(){
          this.$router.push("/main/updatePwd")
+      },
+      toSupp:function(){
+         this.$router.push("/main/supplierinfo")
       }
     }
   }
