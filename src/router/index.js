@@ -11,7 +11,9 @@ import Users from '@/components/user/Users'
 
 import AddCustomer from '@/components/customer/AddCustomer'
 import EditCustomer from '@/components/customer/EditCustomer'
-
+import Addresslist from '@/src/components/addressbooks/Addresslist'
+import Addaddresslist from '@/src/components/addressbooks/Addaddresslist'
+import EditAddress from '@/src/components/addressbooks/EditAddress'
 
 
 Vue.use(Router)
@@ -64,9 +66,24 @@ export default new Router({
           component: Users
         },
         {
-                  path: 'addLinkman',
-                  name: 'AddLinkman',
-                  component: AddLinkman
+          path: 'addLinkman',
+          name: 'AddLinkman',
+          component: AddLinkman
+                },
+        {
+          path: 'addresslist',
+          name: 'Addresslist',
+          component: Addresslist
+                },
+        {
+          path: 'addaddresslist',
+          name: 'Addaddresslist',
+          component: Addaddresslist
+                },
+        {
+          path: 'editAddress',
+          name: 'EditAddress',
+          component: EditAddress
                 },
       ]
     }

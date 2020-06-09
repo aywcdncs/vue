@@ -99,7 +99,7 @@
           <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body" style="padding: 0;">
               <button class="btn btn-default" style="width: 100%;">日程管理</button>
-              <button class="btn btn-default" style="width: 100%;">通讯录</button>
+              <button class="btn btn-default" style="width: 100%;" @click="toAddresslsit">通讯录</button>
               <button class="btn btn-default" style="width: 100%;">通讯管理</button>
               <button class="btn btn-default" style="width: 100%;">公告栏</button>
             </div>
