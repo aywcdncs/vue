@@ -197,17 +197,17 @@
       toUpdatePwd:function(){
          this.$router.push("/main/updatePwd")
       },
-<<<<<<< HEAD
+
       toSupp:function(){
          this.$router.push("/main/supplierinfo")
-=======
+        },
       toGoods:function(){
         this.$router.push("/main/goods")
->>>>>>> f181dd8b4d20dd77985641c857db43824febe268
-      }
-    }
-  }
 
+      }
+   
+  }
+}
 </script>
 
 <style>
