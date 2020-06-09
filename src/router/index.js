@@ -8,13 +8,15 @@ import UpdatePwd from '@/components/UpdatePwd'
 import DetailsCustomer from '@/components/customer/DetailsCustomer'
 import AddLinkman from '@/components/linkman/AddLinkman'
 import Users from '@/components/user/Users'
-
+import Goods from '@/components/goods/Goods'
+import AddGoods from '@/components/goods/AddGoods'
 import AddCustomer from '@/components/customer/AddCustomer'
 import EditCustomer from '@/components/customer/EditCustomer'
+import Supplierinfo from '@/components/supplier/Supplierinfo'
+import AddSupp from '@/components/supplier/AddSupp'
 import Addresslist from '@/src/components/addressbooks/Addresslist'
 import Addaddresslist from '@/src/components/addressbooks/Addaddresslist'
 import EditAddress from '@/src/components/addressbooks/EditAddress'
-
 
 Vue.use(Router)
 
@@ -65,6 +67,27 @@ export default new Router({
           name: 'Users',
           component: Users
         },
+
+        {
+          path: 'supplierinfo',
+          name: 'Supplierinfo',
+          component: Supplierinfo
+        },
+        {
+          path: 'addsupp',
+          name: 'AddSupp',
+          component: AddSupp
+        },
+        {
+          path: 'addLinkman',
+          name: 'AddLinkman',
+          component: AddLinkman
+        },
+        {
+          path: 'goods',
+          name: 'Goods',
+          component: Goods
+        },
         {
           path: 'addLinkman',
           name: 'AddLinkman',
@@ -85,6 +108,10 @@ export default new Router({
           name: 'EditAddress',
           component: EditAddress
                 },
+          path: 'addGoods',
+          name: 'AddGoods',
+          component: AddGoods
+        }
       ]
     }
   ]
