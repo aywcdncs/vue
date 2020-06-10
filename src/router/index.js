@@ -12,11 +12,12 @@ import Goods from '@/components/goods/Goods'
 import AddGoods from '@/components/goods/AddGoods'
 import AddCustomer from '@/components/customer/AddCustomer'
 import EditCustomer from '@/components/customer/EditCustomer'
+
 import Supplierinfo from '@/components/supplier/Supplierinfo'
 import AddSupp from '@/components/supplier/AddSupp'
-import Addresslist from '@/src/components/addressbooks/Addresslist'
-import Addaddresslist from '@/src/components/addressbooks/Addaddresslist'
-import EditAddress from '@/src/components/addressbooks/EditAddress'
+import Addaddresslist from '@/components/addressbooks/Addaddresslist'
+import Addresslist from '@/components/addressbooks/Addresslist'
+import EditAddress from '@/components/addressbooks/EditAddress'
 
 Vue.use(Router)
 
@@ -27,6 +28,7 @@ export default new Router({
       name: 'Login',
       component: Login
     },
+
     {
       path: '/main',
       name: 'Main',
@@ -89,28 +91,24 @@ export default new Router({
           component: Goods
         },
         {
-          path: 'addLinkman',
-          name: 'AddLinkman',
-          component: AddLinkman
-                },
-        {
-          path: 'addresslist',
-          name: 'Addresslist',
-          component: Addresslist
-                },
+          path: 'addGoods',
+          name: 'AddGoods',
+          component: AddGoods
+        },
         {
           path: 'addaddresslist',
           name: 'Addaddresslist',
           component: Addaddresslist
-                },
+        },
+        {
+          path: 'addresslist',
+          name: 'Addresslist',
+          component: Addresslist
+        },
         {
           path: 'editAddress',
           name: 'EditAddress',
           component: EditAddress
-                },
-          path: 'addGoods',
-          name: 'AddGoods',
-          component: AddGoods
         }
       ]
     }
